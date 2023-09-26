@@ -1,52 +1,50 @@
 {
   "name": "todo",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.54",
-    "@types/react": "^18.2.22",
-    "@types/react-dom": "^18.2.7",
-    "antd": "^5.9.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^2.1.3",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "Webpack configuration for react and typescript",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z1gonzo/webpack-typescript-react.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "webpack",
+    "react",
+    "typescript"
+  ],
+  "author": "z1gonzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z1gonzo/webpack-typescript-react/issues"
   },
+  "homepage": "https://github.com/z1gonzo/webpack-typescript-react#readme",
   "devDependencies": {
-    "css-loader": "^6.8.1",
-    "less": "^4.2.0",
-    "less-loader": "^11.1.3",
-    "style-loader": "^3.3.3",
-    "ts-loader": "^9.4.4",
-    "typescript": "^4.9.5",
-    "webpack-cli": "^5.1.4"
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.6",
+    "@types/react": "^16.9.4",
+    "@types/react-dom": "^16.9.4",
+    "@types/react-router-dom": "^5.1.2",
+    "@types/styled-components": "^4.1.21",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^4.4.0"
   }
 }
